@@ -1,16 +1,18 @@
+'use strict';
 const App = require('./site-routes/route-app1.js');
 const App2 = require('./site-routes/route-app2.js');
+const errors = require('./../errors/error-static.js');
 
-module.exports = function (app) {
+module.exports = (app) => {
+    app.get('/', (req, res) => { res.send('working route'); });
     app.use('/app', App);
     app.use('/app2', App2);
-    app.get('/', function (req, res) { res.send('working route'); });
 
     // If nothing else matches, return 404
-    app.use(function (req, res) {
+    app.use((req, res) => {
         return res.status(404).json({
             success: false,
-            error: 'Not Found'
+            error: errors.E_INVALID_REQ
         });
     });
 }

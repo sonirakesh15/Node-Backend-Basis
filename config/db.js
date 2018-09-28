@@ -1,4 +1,5 @@
 // mongoose 4.3.x
+'use strict';
 var mongoose = require('mongoose');
 
 /* 

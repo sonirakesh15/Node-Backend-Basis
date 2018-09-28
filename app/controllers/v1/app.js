@@ -1,3 +1,4 @@
+'use strict';
 const mongoose = require('mongoose');
 const User = require('../../models/user')
 const Response = require('../../../config/response')
@@ -19,7 +20,6 @@ module.exports = {
         return Response.ok(res, user);
     },
     get: (req, res) => {
-        throw (err);
-        //return Response.error(res,);
+        return Response.ok(res);
     }
 }
