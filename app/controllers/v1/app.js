@@ -17,7 +17,7 @@ module.exports = {
         //     console.log('User saved successfully!');
         // });
 
-        return Response.ok(res, user);
+        return Response.ok(res, '', user);
     },
     get: (req, res) => {
         return Response.ok(res);

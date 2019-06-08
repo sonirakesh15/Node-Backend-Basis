@@ -1,17 +1,19 @@
 'use strict';
 const mongoose = require('mongoose');
+const Response = require('../../../config/response')
 
 module.exports = {
-    test: function (req, res) {
-        res.send('App 2 here tested');
-        console.log('app 2 tested');
+    test: (req, res) => {
+        return Response.ok(res, 'App 2 tested');
     },
-    start: function (req, res) {
-        res.send('App 2 here started');
-        console.log('app 2 started');
+    start: (req, res) => {
+        return Response.ok(res, 'App 2 here started');
     },
-    testPost: function (req, res) {
-        res.send('App 2 Post here tested');
-        console.log('app 2 Post tested');
+    testPost: (req, res) => {
+        return  res.status(200).json({
+            success: true,
+            data: data,
+            msg:msg
+        });;
     },
 }

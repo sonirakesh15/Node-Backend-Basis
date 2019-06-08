@@ -1,9 +1,11 @@
+'use strict';
 const express = require('express');
-const app = express.Router();
+let router = express.Router();
 const App2 = require('../../app/controllers/v1/app2.js');
+
 /** Routes */
-app.get('/test', App2.test);
-app.get('/', App2.start);
-app.post('/test', App2.testPost);
+router.get('/test', App2.test);
+router.post('/_info', App2.testPost);
+router.get('/_info', App2.start);
 /** Routes End */
-module.exports = app;
+module.exports = router;

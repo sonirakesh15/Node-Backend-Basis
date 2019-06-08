@@ -13,10 +13,10 @@ var options = {
   replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
 };
 
-var mongodbUri = 'mongodb://rakesh:password@ds137801.mlab.com:37801/application_db';
+//var mongodbUri = `mongodb://${process.env.DB_NAME}:password@ds137801.mlab.com:37801/application_db`;
 
-mongoose.Promise = require('bluebird');
-mongoose.connect(mongodbUri, options);
+//mongoose.Promise = require('bluebird');
+//mongoose.connect(mongodbUri, options);
 var conn = mongoose.connection;
 
 conn.on('error', console.error.bind(console, 'connection error:'));
