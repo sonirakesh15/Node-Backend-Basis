@@ -20,7 +20,8 @@
     "express": "^4.15.3",
     "glob": "^7.1.4",
     "helmet": "^3.18.0",
-    "mongoose": "^4.9.8"
+    "mongoose": "^4.9.8",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
