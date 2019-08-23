@@ -9,4 +9,8 @@ module.exports={
         code: 'E_INVALID_REQ',
         message: 'Invalid Request'
     },
+    E_INVALID_PATH_STRING:{
+        code: 'E_INVALID_PATH_STRING',
+        message: 'Route path must be a string'
+    },
 }

@@ -12,7 +12,7 @@ var options = {
   server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
   replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
 };
-
+/*
 //var mongodbUri = `mongodb://${process.env.DB_NAME}:password@ds137801.mlab.com:37801/application_db`;
 
 //mongoose.Promise = require('bluebird');
@@ -25,3 +25,4 @@ conn.once('open', function () {
   // Wait for the database connection to establish, then start the app.    
   console.log('DB Connected');
 });
+*/

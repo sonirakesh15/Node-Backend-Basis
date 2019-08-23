@@ -20,6 +20,7 @@ app.use(hpp()); //cross verify double params pollution
 app.use(express.static(__dirname + '/'));
 app.enable('trust proxy');      //app.set('trust proxy', 1) // trust first proxy
 
+
 require('../routes/route-list')(app);   // where routes will be defined
 require('./configServer')(app);
 module.exports = app;
