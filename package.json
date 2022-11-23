@@ -23,7 +23,7 @@
     "hpp": "^0.2.2",
     "mongoose": "^4.9.8",
     "mongoose-sanitizer": "^1.0.0",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
