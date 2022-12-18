@@ -1,11 +1,10 @@
-'use strict';
-const express = require('express');
+"use strict";
+const express = require("express");
 let router = express.Router();
-const App = require('../../app/controllers/v1/app.js');
-
+const App = require("../../app/controllers/user.js");
 
 /** Routes */
-router.get('/create', App.create);
+router.get("/print", App.printInfo);
 
 /** Routes End */
 
