@@ -1,7 +1,8 @@
 Steps to run project :
 
-1.  npm i
-    2 npm start or npm run start
+1. git checkout test-cases (project is on test-cases branch)
+2. npm i
+3. npm start or npm run start
 
 Steps to run test :
 
