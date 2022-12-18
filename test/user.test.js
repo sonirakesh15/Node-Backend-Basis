@@ -16,10 +16,10 @@ test("Driving licence not eligible", () => {
   );
 });
 
-test("Error on expecting wrong output", () => {
-  const name = "Joe",
-    age = 23;
-  expect(printInfo(name, age)).toBe(
-    `Wrong output expected as result it will throw error and fail this test`
-  );
-});
+// test("Error on expecting wrong output", () => {
+//   const name = "Joe",
+//     age = 23;
+//   expect(printInfo(name, age)).toBe(
+//     `Wrong output expected as result it will throw error and fail this test`
+//   );
+// });
