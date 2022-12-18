@@ -5,7 +5,7 @@ let app = express();
 const errors = require("../../errors/error-static.js");
 
 let routingLinks = {
-  "route-app1.js": "user",
+  "user.js": "user",
 };
 
 module.exports = () => {
